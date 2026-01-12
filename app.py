@@ -7,7 +7,7 @@ st.header('Analisis Socioeconómico - ENAHO 2023')
 @st.cache_data
 
 def load_data():
-    return pd.read_csv('enaho_2023.csv', encoding='latin-1', nrows=500)
+    return pd.read_csv('enaho_2023.csv', encoding='latin-1', sep=',' nrows=500)
 
 df_enaho = load_data()
 
